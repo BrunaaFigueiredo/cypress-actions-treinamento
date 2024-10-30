@@ -4,12 +4,12 @@ on: [push]
 
 jobs: 
   cypress-etectron-tests:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
     - name: Get code 
       uses: actions/checkout@v4.2.2
 
-      -name: Install dependecies 
+      -name: Install dependencies 
        run: yarn install 
 
        -name: Run E2E tests
